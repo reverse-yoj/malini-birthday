@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Styled Paragraph */
+p {
+    color: #444;
+    font-size: 1.2em;
+    font-style: italic;
+    background-color: #ffe6f2; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #ff4d94;
+    font-size: 2em;
+}
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+th {
+    background: #ff4d94;
+    color: white;
+}
+
+td {
+    background: #ffe6f2;
+}
+
+tr:hover {
+    background: #ffb3d9;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    animation: bounce 1s infinite;
+}
+table:hover {
+    box-shadow: 0px 0px 20px #ff4d94;
+    transition: 0.3s ease-in-out;
+}
+p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.confetti {
+    position: fixed;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: red;
+    opacity: 0.7;
+    animation: fall linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+.malini-img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Makes it a circle */
+    border: 5px solid #ff4d94; /* Pink border */
+    box-shadow: 0px 0px 20px rgba(255, 77, 148, 0.8); /* Glowing effect */
+    transition: transform 0.5s ease-in-out;
+    animation: bounce 2s infinite;
+}
+
+/* 🏀 Bouncing effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* 🖱️ Hover effect: Rotate & Glow */
+.malini-img:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0px 0px 40px rgba(255, 77, 148, 1);
+}
+
+.malini-img {
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally */
+    width: 60%; /* Adjust this value to make it bigger */
+    max-width: 600px; /* Prevents it from getting too large */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+}
+.wish-quote {
+    font-size: 1.3em;
+    font-style: italic;
+    color: #ff4d94;
+    margin: 20px auto;
+    width: 70%;
+    padding: 10px;
+    border-left: 5px solid #ff66b2;
+    background: rgba(255, 240, 245, 0.5);
+    box-shadow: 2px 2px 10px rgba(255, 77, 148, 0.3);
+    text-align: left;
+}
+
+.wish-quote footer {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+

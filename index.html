@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Malini</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #ffe6f2; /
+        }
+        h1 {
+            color: #ff4d94;
+            font-size: 2.5em;
+            animation: sparkle 1s infinite alternate;
+        }
+        @keyframes sparkle {
+            0% { text-shadow: 0 0 5px #ff4d94; }
+            100% { text-shadow: 0 0 15px #ff66b2; }
+        }
+        
+        
+        
+        .wish-button {
+            display: inline-block;
+            background-color: #ff4d94;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 10px #ff66b2;
+            transition: 0.3s;
+        }
+        
+        input, textarea, button {
+            width: 90%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #ff4d94;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            background: #ff4d94;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff66b2;
+        }
+        
+        .wish {
+            font-style: italic;
+            color: #ff4d94;
+            margin: 10px 0;
+        }
+        .wish-author {
+            font-weight: bold;
+            color: #333;
+        }
+        .wish-btn {
+            background-color: #ff4d94;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday Malini! 🎂</h1>
+    <p>The Beauty with NO BRAINS ✨</p> 
+    <br>
+    <img src="images/malini_photo.jpg" alt="Birthday Girl Malini" class="malini-img">
+    
+    <p>Malini – the one and only! A rare combination of unlimited energy, endless laughter, and a talent for turning every serious moment into a comedy show. From her iconic dance moves to her “expert” life advice that no one asked for, She’s got the charm of an old woman, and the brain of… well, let’s just say Google still struggles to understand her logic. 
+        Wishing you a birthday as fabulous, crazy, and unforgettable as you are, Malini! May your day be filled with cake, fun, and at least <b>one moment of wisdom</b> (we know that’s a challenge ). and thats the introduction to the Birthday Specimen!</p>
+        
+        <div class="container">
+            <h2> Malini's Specimen Report 🧪</h2>
+            <table>
+                <tr>
+                    <th>Specimen Name</th>
+                    <td>Malini (Rare Species)</td>
+                </tr>
+                <tr>
+                    <th>Scientific Name</th>
+                    <td>Malinius Dramaqueenicus</td>
+                </tr>
+                <tr>
+                    <th>Common Nicknames</th>
+                    <td>Mallu, Drama Queen, Snack Monster</td>
+                </tr>
+                <tr>
+                    <th>Primary Habitat</th>
+                    <td>Near the fridge, on the bed, or creating chaos</td>
+                </tr>
+                <tr>
+                    <th>Diet</th>
+                    <td>Chocolates, Ice Cream, and Whatever You’re Eating</td>
+                </tr>
+                <tr>
+                    <th>Special Abilities</th>
+                    <td>Talking non-stop, laughing at her own jokes, expert at forgetting things</td>
+                </tr>
+                <tr>
+                    <th>Weakness</th>
+                    <td>Math, Mornings, and Serious Conversations</td>
+                </tr>
+                <tr>
+                    <th>Fun Fact</th>
+                    <td>Can sleep for 12 hours straight but still complain about being tired</td>
+                </tr>
+            </table>
+        </div>
+
+    
+        </script>
+        
+    
+        
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const wishes = JSON.parse(localStorage.getItem("wishes")) || [];
+                const wishesList = document.getElementById("wishes-list");
+                
+                wishes.forEach(wish => {
+                    const wishElement = document.createElement("p");
+                    wishElement.classList.add("wish");
+                    wishElement.innerHTML = `"${wish.text}" - <span class='wish-author'>${wish.author}</span>`;
+                    wishesList.appendChild(wishElement);
+                });
+            });
+        </script>
+            
+            
+</body>
+<script>
+    function changeColor() {
+        const colors = ["#ff4d94", "#ff85a2", "#ffaad4", "#ffccff"];
+        let i = 0;
+        setInterval(() => {
+            document.querySelector("h1").style.color = colors[i];
+            i = (i + 1) % colors.length;
+        }, 1000);
+    }
+    window.onload = changeColor;
+</script>
+<script>
+    function createConfetti() {
+        const confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.body.appendChild(confetti);
+        setTimeout(() => {
+            confetti.remove();
+        }, 5000);
+    }
+    setInterval(createConfetti, 300);
+</script>
+<script>
+    function createConfetti() {
+        const confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        
+        // Random position
+        confetti.style.left = Math.random() * 100 + "vw";
+        
+        // Random size
+        const size = Math.random() * 12 + 8 + "px";
+        confetti.style.width = size;
+        confetti.style.height = size;
+        
+        // Random color
+        const colors = ["#ff4d94", "#ffcc00", "#33cc33", "#3399ff", "#ff6600", "#cc33ff"];
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        
+        // Random animation duration
+        confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+        
+        document.body.appendChild(confetti);
+        
+        // Remove confetti after animation
+        setTimeout(() => {
+            confetti.remove();
+        }, 5000);
+    }
+
+    setInterval(createConfetti, 200); // Creates confetti every 200ms
+    
+</script>
+
+
+<style>
+    .confetti {
+        position: fixed;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        background: red;
+        opacity: 0.7;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        from {
+            transform: translateY(-10px);
+        }
+        to {
+            transform: translateY(100vh);
+        }
+    }
+
+    
+</style>
+
+<div class="wish-container">
+    <h2>Malini’s Birthday Wishes 🎉</h2>
+    <div id="wishesContainer"></div>
+</div>
+
+<script>
+    function displayWishes() {
+        let wishes = JSON.parse(localStorage.getItem("wishes")) || [];
+        let container = document.getElementById("wishesContainer");
+        container.innerHTML = "";
+
+        if (wishes.length === 0) {
+            container.innerHTML = "<p>No wishes yet. Be the first to send one!</p>";
+            return;
+        }
+
+        wishes.forEach(wish => {
+            let wishElement = document.createElement("blockquote");
+            wishElement.classList.add("wish");
+            wishElement.innerHTML = `❝ ${wish.message} ❞ <br> <span class='wish-author'>- ${wish.name}</span>`;
+            container.appendChild(wishElement);
+        });
+    }
+
+    displayWishes(); // Show wishes when the page loads
+</script>
+
+<style>
+    .wish-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ff66b2;
+        margin: 20px auto;
+        width: 60%;
+    }
+    .wish {
+        font-style: italic;
+        color: #ff4d94;
+        margin: 15px 0;
+        padding: 10px;
+        border-left: 5px solid #ff4d94;
+        background: #fff5f8;
+    }
+    .wish-author {
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+
+
+<br>
+<a href="wishform.html" class="wish-button">Send Your Wish 🎈</a>
+
+
+</html>
